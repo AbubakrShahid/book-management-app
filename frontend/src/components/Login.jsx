@@ -19,7 +19,7 @@ const Login = () => {
       const data = await res.json();
       if (res.ok) {
         localStorage.setItem("token", data.token);
-        navigate("/dashboard"); // or your protected route
+        navigate("/dashboard");
       } else {
         alert(data.error);
       }
